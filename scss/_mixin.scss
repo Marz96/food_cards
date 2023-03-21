@@ -1,0 +1,6 @@
+@mixin family-weight($weght) {
+    font: {
+        family: sans-serif;
+        weight: $weght;
+    }
+}

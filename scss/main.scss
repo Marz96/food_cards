@@ -1,0 +1,61 @@
+@import 'scss/mixin';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-auto-flow: row;
+    justify-items: center;
+    gap: 20px;
+    padding: 0 30px;
+    
+    .wrapper__food {
+        width: 128px;
+        text-align: center;
+        margin: 30px 30px 20px 30px;
+    }
+
+    .wrapper__block {
+        height: 250px;
+        border: 2px solid grey {
+            radius: 30px;
+        }
+    }
+
+    .food__text {
+        text-align: center;
+        @include family-weight(700);
+        font-size: 16px;
+    }
+}
+
+h1 {
+    padding: 50px 0;
+    text-align: center;
+    @include family-weight(900);
+}
+
+.wrapper__text {
+    @include family-weight(600);
+    font-size: 20px;
+    text-align: center;
+    border-top: 2px solid grey;
+    margin: 20px 20px 0 20px;
+    padding: 20px 0;
+
+    &::before {
+        content: "...";
+    }
+
+    &::after {
+        content: "...";
+    }
+}
+
+
+
